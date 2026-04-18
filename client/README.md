@@ -1,0 +1,95 @@
+# 🛍️ Jebra Com - Full Stack E-commerce Website
+
+একটি সম্পূর্ণ ফাংশনাল ই-কমার্স ওয়েবসাইট যেখানে ব্যবহারকারীরা পণ্য দেখতে, কার্টে যোগ করতে, অর্ডার করতে এবং পেমেন্ট সম্পন্ন করতে পারে।
+
+## 🚀 লাইভ ডেমো
+- Frontend: `http://localhost:5173`
+- Backend API: `http://localhost:5000`
+
+## 📚 টেকনোলজি স্ট্যাক
+
+### ফ্রন্টএন্ড
+- **React 19** - ইউজার ইন্টারফেস
+- **Vite** - বিল্ড টুল
+- **Tailwind CSS** - স্টাইলিং
+- **React Router DOM** - পেজ রাউটিং
+- **Axios** - API কল
+- **React Icons** - আইকন
+
+### ব্যাকএন্ড
+- **Node.js** - রানটাইম এনভায়রনমেন্ট
+- **Express.js** - ওয়েব ফ্রেমওয়ার্ক
+- **MongoDB** - ডাটাবেস
+- **Mongoose** - ODM
+- **JWT** - অথেন্টিকেশন
+- **bcryptjs** - পাসওয়ার্ড এনক্রিপশন
+
+## ✨ ফিচারসমূহ
+
+### ইউজার ফিচার
+- ✅ ইউজার রেজিস্ট্রেশন ও লগইন
+- ✅ JWT টোকেন বেইজড অথেন্টিকেশন
+- ✅ পণ্য ব্রাউজ করা
+- ✅ ক্যাটাগরি অনুযায়ী ফিল্টার (ফোন, ল্যাপটপ, ওয়াচ)
+- ✅ কার্টে পণ্য যোগ/বৃদ্ধি/কমানো
+- ✅ স্টক চেক ও লিমিটেশন
+- ✅ অর্ডার প্লেসমেন্ট
+- ✅ bKash ও Nagad পেমেন্ট সিমুলেশন
+- ✅ ডার্ক/লাইট মোড টগল
+- ✅ রেসপনসিভ ডিজাইন
+
+### অ্যাডমিন ফিচার
+- ✅ নতুন পণ্য যোগ করা
+- ✅ পণ্য এডিট/ডিলিট (কামিং সুন)
+- ✅ স্টক ম্যানেজমেন্ট
+- ✅ অর্ডার ভিউ (কামিং সুন)
+
+## 📁 প্রজেক্ট স্ট্রাকচার
+
+jebra-com/
+├── client/ # ফ্রন্টএন্ড
+│ ├── src/
+│ │ ├── components/
+│ │ │ ├── Navbar.jsx
+│ │ │ ├── Footer.jsx
+│ │ │ └── DarkModeToggle.jsx
+│ │ ├── pages/
+│ │ │ ├── Home.jsx
+│ │ │ ├── Category.jsx
+│ │ │ ├── Contact.jsx
+│ │ │ ├── AddProduct.jsx
+│ │ │ ├── Cart.jsx
+│ │ │ ├── Payment.jsx
+│ │ │ ├── Login.jsx
+│ │ │ └── Register.jsx
+│ │ ├── services/
+│ │ │ └── api.js
+│ │ ├── App.jsx
+│ │ └── main.jsx
+│ └── package.json
+│
+└── backend/ # ব্যাকএন্ড
+├── config/
+│ └── db.js
+├── models/
+│ ├── User.js
+│ ├── Product.js
+│ ├── Category.js
+│ └── Order.js
+├── routes/
+│ ├── auth.js
+│ ├── products.js
+│ ├── categories.js
+│ └── orders.js
+├── controllers/
+│ ├── authController.js
+│ ├── productController.js
+│ ├── categoryController.js
+│ └── orderController.js
+├── middleware/
+│ ├── auth.js
+│ └── error.js
+├── utils/
+│ └── generateToken.js
+├── .env
+└── server.js
